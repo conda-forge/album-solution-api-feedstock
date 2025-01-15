@@ -1,13 +1,13 @@
 {% set name = "album-solution-api" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 879e26cf5a70cb7bbb2a5f65dba15af21cb6d3fe71c9608b89b90b9dd47756e5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: fb91360ce1e0dbbc6527cf7d3c0533a036d835fb1919344cb0600793158c8c11
 
 build:
   number: 1
